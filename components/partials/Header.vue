@@ -63,9 +63,7 @@
 
 <style scoped>
 
-.element {
-   background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) -2.38%, rgba(255, 255, 255, 0) 153.05%);
-}
+
 
 
 </style>
