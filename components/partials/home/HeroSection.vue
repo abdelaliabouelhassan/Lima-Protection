@@ -1,21 +1,27 @@
 <template>
   <div class="w-full relative">
-    <img src="/images/hero-bg.png" class="w-full h-full object-cover" alt="" />
-    <div class="absolute bottom-48 left-0 w-full">
+    <img src="/images/hero-bg.png" class="w-full h-[1025px]" alt="" />
+    <div class="absolute bottom-64 md:bottom-48 left-0 w-full">
       <div class="flex flex-col items-center -space-y-36">
         <div>
           <img
             src="/images/Mask.png"
-            class="w-[456px] h-full object-cover"
+            class="w-full lg:w-[456px] h-full object-cover"
             alt=""
           />
         </div>
 
-        <div class="max-w-[714px] text-center space-y-6">
-          <h1 class="font-bold font-satoshi text-white text-5xl leading-[63px]">
+        <div
+          class="max-w-[714px] text-center space-y-6 flex flex-col items-center px-4 md:px-0"
+        >
+          <h1
+            class="font-bold font-satoshi text-white text-3xl md:text-5xl leading-normal md:leading-[63px]"
+          >
             We offer Exclusive, Safe & Secured Protection
           </h1>
-          <p class="text-white text-opacity-70 font-normal">
+          <p
+            class="text-white text-opacity-70 font-normal max-w-[612px] text-center"
+          >
             Our security company established in the Paris region,
             <span class="font-bold text-white">Lima Protection</span>, provides
             private aid and close security missions both in France and abroad.
@@ -37,7 +43,7 @@
     </div>
     <div class="w-full absolute left-0 bottom-14">
       <div class="w-full flex justify-center">
-        <div class="flex items-center gap-2">
+        <div class="flex items-center flex-wrap justify-center gap-2">
           <span class="text-white text-opacity-70 font-satoshi font-medium"
             >Regulated by</span
           >
