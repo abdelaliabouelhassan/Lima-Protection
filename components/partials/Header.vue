@@ -13,25 +13,25 @@
         >
           <a
             href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
           >
             About us
           </a>
           <a
             href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
           >
             Blog
           </a>
           <a
             href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
           >
             Customers
           </a>
           <a
             href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
           >
             Resources
           </a>
@@ -45,11 +45,11 @@
       <div class="items-center gap-4 hidden lg:flex">
         <a
           href="#"
-          class="text-white text-opacity-60 font-satoshi hover:text-opacity-80 duration-200"
+          class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200"
           >Apply</a
         >
         <button
-          class="text-black font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full hover:bg-opacity-80 duration-200"
+          class="text-black hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
         >
           Hire us
         </button>
@@ -104,7 +104,7 @@
         </router-link>
         <button
           name="menu2"
-          class="h-fit lg:hidden"
+          class="h-fit lg:hidden text-white text-opacity-70 pt-1"
           @click="showMenu = !showMenu"
         >
           <svg
@@ -138,25 +138,25 @@
         >
           <a
             href="#"
-            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             About us
           </a>
           <a
             href="#"
-            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             Blog
           </a>
           <a
             href="#"
-            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             Customers
           </a>
           <a
             href="#"
-            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-80 duration-200"
+            class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             Resources
           </a>
@@ -165,11 +165,11 @@
           <div class="flex items-center flex-col gap-4">
             <a
               href="#"
-              class="text-white text-opacity-60 font-satoshi hover:text-opacity-80 duration-200"
+              class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200"
               >Apply</a
             >
             <button
-              class="text-black font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full hover:bg-opacity-80 duration-200"
+              class="text-black font-satoshi hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
             >
               Hire us
             </button>

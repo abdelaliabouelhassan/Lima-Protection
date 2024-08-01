@@ -30,11 +30,9 @@
             </p>
 
             <div class="pt-6">
-              <button
-                class="element rounded-full p-px hover:scale-110 duration-200"
-              >
+              <button class="element rounded-full p-px group duration-300">
                 <div
-                  class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black bg-gradient-to-b from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
+                  class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black duration-300 bg-gradient-to-br group-hover:from-[#ffffff80] group-hover:to-[#00000001] from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
                 >
                   Hire us
                 </div>
