@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full bg-black">
-    <Header class="absolute top-0 left-0 z-50" />
+    <Header />
     <slot />
   </div>
 </template>
