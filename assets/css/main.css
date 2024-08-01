@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Black.otf') format('opentype');
+    font-weight: 900; /* Assuming it's a bold font */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.otf') format('opentype');
+    font-weight: 400; /* Assuming it's a bold font */
+    font-style: normal;
+}
