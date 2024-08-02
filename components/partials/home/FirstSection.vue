@@ -12,7 +12,7 @@
       <div class="w-full space-y-8">
         <div class="w-full space-y-4">
           <span
-            class="font-satoshi text-white font-black text-sm text-opacity-60"
+            class="font-satoshi text-white font-black text-sm text-opacity-60 uppercase"
             >what we do</span
           >
 

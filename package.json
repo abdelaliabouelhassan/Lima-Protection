@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "nuxt": "^3.12.4",
-    "vue": "latest"
+    "vue": "latest",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@splidejs/vue-splide": "^0.6.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
