@@ -410,6 +410,7 @@
           />
         </g>
         <line
+          class="dashed-line"
           x1="519.812"
           y1="190.39"
           x2="344.812"
@@ -419,6 +420,7 @@
           stroke-dasharray="10 10"
         />
         <line
+          class="dashed-line"
           x1="562.972"
           y1="200.835"
           x2="589.972"
@@ -428,6 +430,7 @@
           stroke-dasharray="10 10"
         />
         <line
+          class="dashed-line"
           x1="512.448"
           y1="159.497"
           x2="246.448"
@@ -437,12 +440,14 @@
           stroke-dasharray="10 10"
         />
         <path
+          class="dashed-line"
           d="M812.574 125.494L589.5 158.5"
           stroke="white"
           stroke-opacity="0.3"
           stroke-dasharray="10 10"
         />
         <path
+          class="dashed-line"
           d="M947.5 240L587.5 173"
           stroke="white"
           stroke-opacity="0.3"
@@ -1364,3 +1369,20 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+.dashed-line {
+  stroke-dasharray: 5, 5; /* Pattern of dashes and gaps */
+  stroke-dashoffset: 0;
+  animation: dash-animation 2s linear infinite;
+}
+
+@keyframes dash-animation {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -10; /* Negative value to make the dash move in the opposite direction */
+  }
+}
+</style>
