@@ -88,9 +88,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-import ClientsCard from "@/components/UI/ClientsCard.vue";
-import ServicesCard from "@/components/UI/ServicesCard.vue";
-import PortfolioCard from "@/components/UI/PortfolioCard.vue";
-</script>
