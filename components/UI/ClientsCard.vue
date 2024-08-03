@@ -17,7 +17,7 @@
           directors and executives of large companies.
         </p>
       </div>
-      <div class="w-full relative space-y-4 effect">
+      <div class="w-full relative space-y-8 effect">
         <Splide :extensions="extensions" :options="options">
           <SplideSlide v-for="(item, index, key) in UpperClients" :key="key">
             <div

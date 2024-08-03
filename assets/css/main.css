@@ -31,10 +31,10 @@
 }
 
 .element {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) -2.38%,
-    rgba(255, 255, 255, 0) 153.05%
+  background: radial-gradient(
+    223.96% 223.96% at 50% -76.04%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 90%
   );
 }
 

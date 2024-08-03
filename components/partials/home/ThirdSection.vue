@@ -1,6 +1,6 @@
 <template>
   <section class="w-full py-20 space-y-14">
-    <div class="flex flex-col items-center gap-8 px-4 text-center">
+    <div class="flex flex-col items-center gap-6 px-4 text-center">
       <span
         class="font-satoshi font-black text-sm text-white text-opacity-60 uppercase"
         >our experiences</span
