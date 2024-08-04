@@ -8,9 +8,9 @@
           rgba(255, 255, 255, 0) 85.45%
         );
       "
-      class="relative h-[827px] overflow-hidden max-w-[1280px] w-full mx-auto p-[1.5px] rounded-[32px]"
+      class="relative h-[827px] overflow-hidden max-w-[1280px] w-full mx-auto p-[1.5px] rounded-t-[32px]"
     >
-      <div class="effect-bg rounded-[32px]">
+      <div class="effect-bg rounded-t-[32px]">
         <div
           class="flex flex-col items-center gap-6 px-4 text-center z-10 relative pt-10"
         >
