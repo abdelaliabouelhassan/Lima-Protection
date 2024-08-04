@@ -18,7 +18,13 @@
         </p>
       </div>
       <div class="w-full relative space-y-8 effect">
-        <Splide :extensions="extensions" :options="options">
+        <Splide
+          @splide:mounted="splideMounted"
+          :extensions="extensions"
+          :options="options"
+          @mouseover="startScroll"
+          @mouseleave="stopScroll"
+        >
           <SplideSlide v-for="(item, index, key) in UpperClients" :key="key">
             <div
               class="py-[16px] h-[128px] w-[160px] xl:w-[180px] bg-[#FFFFFF0D] border border-[#FFFFFF1A] rounded-lg flex relative z-20"
@@ -38,7 +44,13 @@
             </div>
           </SplideSlide>
         </Splide>
-        <Splide :extensions="extensions" :options="options2">
+        <Splide
+          @splide:mounted="splideMounted1"
+          :extensions="extensions"
+          :options="options2"
+          @mouseover="startScroll1"
+          @mouseleave="stopScroll1"
+        >
           <SplideSlide v-for="(item, index, key) in LowerClients" :key="key">
             <div
               class="py-[16px] h-[128px] w-[160px] xl:w-[180px] bg-[#FFFFFF0D] border border-[#FFFFFF1A] rounded-lg flex relative z-20"
@@ -144,8 +156,8 @@ const options = ref({
   keyboard: "global",
   autoScroll: {
     speed: 0.5,
-    autostart: true,
-    pauseOnHover: true,
+    autostart: false,
+    // pauseOnHover: true,
   },
   breakpoints: {
     1534: {
@@ -181,8 +193,8 @@ const options2 = ref({
   keyboard: "global",
   autoScroll: {
     speed: -0.5,
-    autostart: true,
-    pauseOnHover: true,
+    autostart: false,
+    // pauseOnHover: true,
   },
   breakpoints: {
     1534: {
@@ -206,6 +218,35 @@ const options2 = ref({
     },
   },
 });
+
+const splideRef = ref(null);
+const splideRef1 = ref(null);
+
+const startScroll = () => {
+  splideRef.value.Components.AutoScroll.play();
+};
+
+const startScroll1 = () => {
+  splideRef1.value.Components.AutoScroll.play();
+};
+
+const stopScroll = () => {
+  splideRef.value.Components.AutoScroll.pause();
+};
+
+const stopScroll1 = () => {
+  splideRef1.value.Components.AutoScroll.pause();
+};
+
+const splideMounted = (e) => {
+  splideRef.value = e;
+  splideRef.value.Components.AutoScroll.pause();
+};
+
+const splideMounted1 = (e) => {
+  splideRef1.value = e;
+  splideRef1.value.Components.AutoScroll.pause();
+};
 </script>
 
 <style scoped>

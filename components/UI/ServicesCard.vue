@@ -19,7 +19,13 @@
         </p>
       </div>
       <div class="w-full relative space-y-4 effect">
-        <Splide :extensions="extensions" :options="options">
+        <Splide
+          @splide:mounted="splideMounted"
+          :extensions="extensions"
+          :options="options"
+          @mouseover="startScroll"
+          @mouseleave="stopScroll"
+        >
           <SplideSlide v-for="(item, index, key) in Services" :key="key">
             <div
               class="py-[16px] h-[72px] w-[72px] bg-[#FFFFFF0D] border border-[#FFFFFF1A] rounded-lg flex relative z-20"
@@ -91,8 +97,8 @@ const options = ref({
   keyboard: "global",
   autoScroll: {
     speed: 0.5,
-    autostart: true,
-    pauseOnHover: true,
+    autostart: false,
+    // pauseOnHover: true,
   },
   breakpoints: {
     1534: {
@@ -116,6 +122,21 @@ const options = ref({
     },
   },
 });
+
+const splideRef = ref(null);
+
+const startScroll = () => {
+  splideRef.value.Components.AutoScroll.play();
+};
+
+const stopScroll = () => {
+  splideRef.value.Components.AutoScroll.pause();
+};
+
+const splideMounted = (e) => {
+  splideRef.value = e;
+  splideRef.value.Components.AutoScroll.pause();
+};
 </script>
 
 <style scoped>

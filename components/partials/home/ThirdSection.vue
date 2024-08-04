@@ -10,11 +10,13 @@
         Diverse expertise for diverse customers
       </h3>
 
-      <button
+      <a
+        href="https://ax6hl0zetxi.typeform.com/to/ehMKwuTo"
+        target="_blank"
         class="text-black font-satoshi font-medium text-base bg-white py-[12px] px-[24px] rounded-full hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] duration-200"
       >
         Hire us
-      </button>
+      </a>
     </div>
 
     <div

@@ -137,7 +137,8 @@
           >Cookies</a
         >
         <a
-          href="#"
+          href="https://limaprotection.com/politique-confidentialite/"
+          target="_blank"
           class="text-white font-medium font-satoshi text-sm underline"
           >Privacy</a
         >

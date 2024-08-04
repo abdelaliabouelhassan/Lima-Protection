@@ -18,7 +18,13 @@
         </p>
       </div>
       <div class="w-full relative space-y-4">
-        <Splide :extensions="extensions" :options="options">
+        <Splide
+          @splide:mounted="splideMounted"
+          :extensions="extensions"
+          :options="options"
+          @mouseover="startScroll"
+          @mouseleave="stopScroll"
+        >
           <SplideSlide v-for="(item, index, key) in Portfolio" :key="key">
             <div
               class="rounded-full bg-card flex py-[12px] px-[20px] font-satoshi font-medium border border-[#FFFFFF1A] bg-black duration-300"
@@ -76,11 +82,11 @@ const options = ref({
   type: "loop",
   drag: false,
   gap: "11px",
+
   keyboard: "global",
   autoScroll: {
     speed: 0.5,
-    autostart: true,
-    pauseOnHover: true,
+    autoStart: false,
   },
   breakpoints: {
     1534: {
@@ -103,6 +109,21 @@ const options = ref({
     },
   },
 });
+
+const splideRef = ref(null);
+
+const startScroll = () => {
+  splideRef.value.Components.AutoScroll.play();
+};
+
+const stopScroll = () => {
+  splideRef.value.Components.AutoScroll.pause();
+};
+
+const splideMounted = (e) => {
+  splideRef.value = e;
+  splideRef.value.Components.AutoScroll.pause();
+};
 </script>
 
 <style scoped>

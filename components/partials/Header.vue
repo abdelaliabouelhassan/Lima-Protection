@@ -48,11 +48,13 @@
           class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200"
           >Apply</a
         >
-        <button
+        <a
+          href="https://ax6hl0zetxi.typeform.com/to/ehMKwuTo"
+          target="_blank"
           class="text-black hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
         >
           Hire us
-        </button>
+        </a>
       </div>
 
       <button
@@ -168,11 +170,13 @@
               class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200"
               >Apply</a
             >
-            <button
+            <a
+              href="https://ax6hl0zetxi.typeform.com/to/ehMKwuTo"
+              target="_blank"
               class="text-black font-satoshi hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
             >
               Hire us
-            </button>
+            </a>
           </div>
         </div>
       </div>

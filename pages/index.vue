@@ -7,7 +7,7 @@
     <FifthSection />
     <SixthSection />
     <SeventhSection />
-    <EightSection />
+    <!-- <EightSection /> -->
     <NinthSection />
   </div>
 </template>

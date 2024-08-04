@@ -1,6 +1,6 @@
 <template>
-  <section class="space-y-14 pb-24">
-    <div class="w-full relative">
+  <section class="-space-y-14 pb-24">
+    <div class="w-full relative -space-y-20">
       <img src="/images/hero-bg.png" class="w-full h-[1025px]" alt="" />
       <div class="absolute bottom-64 md:bottom-48 left-0 w-full">
         <div class="flex flex-col items-center -space-y-36">
@@ -30,18 +30,23 @@
             </p>
 
             <div class="pt-6">
-              <button class="element rounded-full p-px group duration-300">
-                <div
-                  class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black duration-300 bg-gradient-to-br group-hover:from-[#ffffff80] group-hover:to-[#00000001] from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
-                >
-                  Hire us
-                </div>
-              </button>
+              <a
+                href="https://ax6hl0zetxi.typeform.com/to/ehMKwuTo"
+                target="_blank"
+              >
+                <button class="element rounded-full p-px group duration-300">
+                  <div
+                    class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black duration-300 bg-gradient-to-br group-hover:from-[#ffffff80] group-hover:to-[#00000001] from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
+                  >
+                    Hire us
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="w-full absolute left-0 bottom-14">
+      <div class="w-full hidden">
         <div class="w-full flex justify-center">
           <div class="flex items-center flex-wrap justify-center gap-2">
             <span class="text-white text-opacity-70 font-satoshi font-medium"
@@ -61,6 +66,7 @@
         </div>
       </div>
     </div>
+
     <div class="w-full flex flex-col items-center gap-8">
       <span class="text-white text-opacity-70 font-medium font-satoshi"
         >They are writing about us:</span
