@@ -1,19 +1,31 @@
 <template>
-  <section class="-space-y-14 pb-24">
-    <div class="w-full relative -space-y-20">
-      <img src="/images/hero-bg.png" class="w-full h-[1025px]" alt="" />
-      <div class="absolute bottom-64 md:bottom-48 left-0 w-full">
-        <div class="flex flex-col items-center -space-y-36">
-          <div>
+  <section class="sm:-space-y-14 pb-24">
+    <div class="w-full relative sm:-space-y-20">
+      <div class="sm:block hidden">
+        <img src="/images/hero-bg.png" class="w-full sm:h-[1025px]" alt="" />
+      </div>
+
+      <div
+        class="sm:absolute pt-14 sm:pt-0 bottom-14 sm:bottom-64 md:bottom-48 left-0 w-full"
+      >
+        <div class="flex flex-col items-center sm:-space-y-36">
+          <div class="sm:block hidden">
             <img
               src="/images/Mask.png"
               class="w-full lg:w-[456px] h-full object-cover"
               alt=""
             />
           </div>
+          <div class="sm:hidden">
+            <img
+              src="/images/mask-mobile.png"
+              class="w-full object-cover h-[450px]"
+              alt=""
+            />
+          </div>
 
           <div
-            class="max-w-[714px] text-center space-y-6 flex flex-col items-center px-4 md:px-0"
+            class="max-w-[714px] text-center space-y-6 flex flex-col items-center px-4 md:px-0 -mt-[10rem]"
           >
             <h1
               class="font-bold font-satoshi text-white text-3xl md:text-5xl leading-normal md:leading-[63px]"
@@ -67,7 +79,7 @@
       </div>
     </div>
 
-    <div class="w-full flex flex-col items-center gap-8">
+    <div class="w-full flex flex-col items-center gap-8 pt-14 sm:pt-0">
       <span class="text-white text-opacity-70 font-medium font-satoshi"
         >They are writing about us:</span
       >

@@ -1,7 +1,7 @@
 <template>
   <header class="w-full absolute top-0 left-0 z-50">
     <div
-      class="w-full max-w-[1313px] mx-auto flex items-center justify-between px-4 pb-4 pt-8"
+      class="w-full max-w-[1313px] mx-auto flex items-center justify-between px-4 pb-4 pt-8 z-50 relative"
     >
       <div>
         <img src="/images/logo.svg" class="w-full h-full object-cover" alt="" />
