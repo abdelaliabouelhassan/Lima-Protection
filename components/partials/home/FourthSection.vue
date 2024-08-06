@@ -15,7 +15,7 @@
         target="_blank"
         class="text-black font-satoshi font-medium text-base bg-white py-[12px] px-[24px] rounded-full hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] duration-200"
       >
-        Hire us
+        {{ $t("hire-us") }}
       </a>
     </div>
 

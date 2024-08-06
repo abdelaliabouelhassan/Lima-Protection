@@ -30,16 +30,12 @@
             <h1
               class="font-bold font-satoshi text-white text-3xl md:text-5xl leading-normal md:leading-[63px]"
             >
-              We offer Exclusive, Safe & Secured Protection
+              {{ $t("offer-exclusive") }}
             </h1>
             <p
               class="text-white text-opacity-70 font-normal max-w-[612px] text-center"
-            >
-              Our security company established in the Paris region,
-              <span class="font-bold text-white">Lima Protection</span>,
-              provides private aid and close security missions both in France
-              and abroad.
-            </p>
+              v-html="$t('our-security')"
+            ></p>
 
             <div class="pt-6">
               <a
@@ -50,39 +46,40 @@
                   <div
                     class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black duration-300 bg-gradient-to-br group-hover:from-[#ffffff80] group-hover:to-[#00000001] from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
                   >
-                    Hire us
+                    {{ $t("hire-us") }}
                   </div>
                 </button>
               </a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="w-full hidden">
-        <div class="w-full flex justify-center">
-          <div class="flex items-center flex-wrap justify-center gap-2">
-            <span class="text-white text-opacity-70 font-satoshi font-medium"
-              >Regulated by</span
-            >
-            <div class="h-[22px] w-[64px]">
-              <img
-                src="/images/head.png"
-                class="w-full h-full object-cover"
-                alt=""
-              />
+            <div class="w-full hidden">
+              <div class="w-full flex justify-center">
+                <div class="flex items-center flex-wrap justify-center gap-2">
+                  <span
+                    class="text-white text-opacity-70 font-satoshi font-medium"
+                    >{{ $t("regulated-by") }}</span
+                  >
+                  <div class="h-[22px] w-[64px]">
+                    <img
+                      src="/images/head.png"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <span class="text-white font-medium font-satoshi">{{
+                    $t("Interior")
+                  }}</span>
+                </div>
+              </div>
             </div>
-            <span class="text-white font-medium font-satoshi"
-              >the French Ministry for Interior</span
-            >
           </div>
         </div>
       </div>
     </div>
 
     <div class="w-full flex flex-col items-center gap-8 pt-14 sm:pt-0">
-      <span class="text-white text-opacity-70 font-medium font-satoshi"
-        >They are writing about us:</span
-      >
+      <span class="text-white text-opacity-70 font-medium font-satoshi">{{
+        $t("writing")
+      }}</span>
 
       <div
         class="w-full flex flex-wrap gap-3 max-w-[1180px] mx-auto px-4 justify-center"

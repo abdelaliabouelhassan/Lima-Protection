@@ -20,7 +20,7 @@
             <div
               class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black duration-300 bg-gradient-to-br group-hover:from-[#ffffff80] group-hover:to-[#00000001] from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
             >
-              Hire us
+              {{ $t("hire-us") }}
             </div>
           </a>
         </div>

@@ -4,9 +4,7 @@
       <div>
         <img src="/images/uk.png" class="w-full h-full object-cover" alt="" />
       </div>
-      <span class="font-satoshi text-white uppercase">
-        {{ locale }} - {{ $t("hello") }}</span
-      >
+      <span class="font-satoshi text-white uppercase"> {{ locale }}</span>
       <div>
         <svg
           width="12"

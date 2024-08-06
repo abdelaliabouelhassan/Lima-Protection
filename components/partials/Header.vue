@@ -53,7 +53,7 @@
           target="_blank"
           class="text-black hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
         >
-          Hire us
+          {{ $t("hire-us") }}
         </a>
       </div>
 
@@ -175,7 +175,7 @@
               target="_blank"
               class="text-black font-satoshi hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
             >
-              Hire us
+              {{ $t("hire-us") }}
             </a>
           </div>
         </div>

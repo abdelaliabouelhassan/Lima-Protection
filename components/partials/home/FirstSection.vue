@@ -13,18 +13,17 @@
         <div class="w-full space-y-4">
           <span
             class="font-satoshi text-white font-black text-sm text-opacity-60 uppercase"
-            >what we do</span
+            >{{ $t("what-we-do") }}</span
           >
 
           <h4 class="font-bold font-satoshi text-white text-4xl leading-[-2%]">
-            Protecting our customers is our principles
+            {{ $t("protecting") }}
           </h4>
 
           <p
             class="text-white text-opacity-70 text-lg font-normal font-satoshi"
           >
-            Anticipate a proactive and efficient approach to security
-            assessments, designed to conduct through and scalabl.
+            {{ $t("anticipate") }}
           </p>
         </div>
         <div class="grid grid-cols-2 gap-8">
@@ -87,11 +86,10 @@
               <h4
                 class="font-satoshi font-medium text-[20px] md:text-[22px] text-white"
               >
-                Personalized Risk Assessment
+                {{ $t("assessment") }}
               </h4>
               <p class="text-sm font-satoshi text-white text-opacity-70">
-                Conducting detailed assessments tailored to each mission,
-                providing an accurate understanding of potential hazards.
+                {{ $t("conducting") }}
               </p>
             </div>
           </div>
@@ -109,11 +107,10 @@
               <h4
                 class="font-satoshi font-medium text-[20px] md:text-[22px] text-white"
               >
-                Proactive monitoring
+                {{ $t("monitoring") }}
               </h4>
               <p class="text-sm font-satoshi text-white text-opacity-70">
-                Implementation of real-time monitoring and proactive protection
-                strategies, ensuring immediate response to emerging threats.
+                {{ $t("implementation") }}
               </p>
             </div>
           </div>
@@ -131,12 +128,10 @@
               <h4
                 class="font-satoshi font-medium text-[20px] md:text-[22px] text-white"
               >
-                Comprehensive Security Solutions
+                {{ $t("comprehensive") }}
               </h4>
               <p class="text-sm font-satoshi text-white text-opacity-70">
-                Providing services ranging from setting up physical security
-                systems to cybersecurity solutions, as well as expertise in
-                effectively managing crises and conflicts.
+                {{ $t("services") }}
               </p>
             </div>
           </div>
