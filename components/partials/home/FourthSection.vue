@@ -3,11 +3,11 @@
     <div class="flex flex-col items-center gap-6 px-4 text-center">
       <span
         class="font-satoshi font-black text-sm text-white text-opacity-60 uppercase"
-        >Work with Lima Protection</span
+        >{{ $t("work") }}</span
       >
 
       <h3 class="text-white font-satoshi font-bold text-4xl">
-        How to get started with Lima Protection
+        {{ $t("how-to") }}
       </h3>
 
       <a
@@ -39,13 +39,12 @@
 
           <div class="w-full space-y-4 z-10 relative">
             <h2 class="text-white font-satoshi font-bold text-2xl">
-              Initial Consultation
+              {{ $t("initial") }}
             </h2>
             <p
               class="text-white text-opacity-70 font-satoshi font-normal text-base"
             >
-              Reach out to us. We respond within the same day to understand your
-              specific needs and unique situation.
+              {{ $t("reach-out") }}
             </p>
           </div>
         </div>
@@ -81,7 +80,7 @@
                   />
                 </svg>
                 <span class="text-white font-satoshi font-medium text-sm"
-                  >Est. 6 hours</span
+                  >{{ $t("est") }}. 6 {{ $t("hours") }}</span
                 >
               </div>
             </div>
@@ -89,13 +88,12 @@
 
           <div class="w-full space-y-4 z-10 relative">
             <h2 class="text-white font-satoshi font-bold text-2xl">
-              Customized Proposal
+              {{ $t("customized") }}
             </h2>
             <p
               class="text-white text-opacity-70 font-satoshi font-normal text-base"
             >
-              Our experts will assess your situation and the associated risks to
-              provide a tailored security plan and a detailed quote.
+              {{ $t("will-assess") }}
             </p>
           </div>
         </div>
@@ -131,7 +129,7 @@
                   />
                 </svg>
                 <span class="text-white font-satoshi font-medium text-sm"
-                  >Est. 6-18 hours</span
+                  >{{ $t("est") }}. 6-18 {{ $t("hours") }}</span
                 >
               </div>
             </div>
@@ -139,13 +137,12 @@
 
           <div class="w-full space-y-4 z-10 relative">
             <h2 class="text-white font-satoshi font-bold text-2xl">
-              Deployment of Security Team
+              {{ $t("deployment") }}
             </h2>
             <p
               class="text-white text-opacity-70 font-satoshi font-normal text-base"
             >
-              Your security team, fully equipped and briefed, will be dispatched
-              promptly to your location, whether in France or internationally.
+              {{ $t("security") }}
             </p>
           </div>
         </div>

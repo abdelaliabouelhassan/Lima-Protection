@@ -3,17 +3,17 @@
     <div class="flex flex-col items-center gap-6 px-4 text-center">
       <span
         class="font-satoshi font-black text-sm text-white text-opacity-60 uppercase"
-        >our recruitment process</span
+        >{{ $t("process") }}</span
       >
 
       <h3 class="text-white font-satoshi font-bold text-4xl">
-        Confident? Great, let’s be part of our team
+        {{ $t("confident") }}
       </h3>
 
       <button
         class="text-black font-satoshi font-medium text-base bg-white py-[12px] px-[24px] rounded-full hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] duration-200"
       >
-        Get started
+        {{ $t("get-started") }}
       </button>
     </div>
 
@@ -31,13 +31,12 @@
 
         <div class="w-full text-center space-y-4">
           <h3 class="text-white font-medium font-satoshi text-xl">
-            Targeted profile
+            {{ $t("targeted") }}
           </h3>
           <p
             class="text-sm text-white text-opacity-70 font-satoshi font-normal"
           >
-            Recruitment focused on candidates with experience in the police
-            forces, law enforcement agencies (FDO), or armed forces.
+            {{ $t("recruitment") }}
           </p>
         </div>
       </div>
@@ -52,14 +51,12 @@
 
         <div class="w-full text-center space-y-4">
           <h3 class="text-white font-medium font-satoshi text-xl">
-            Specialized expertise
+            {{ $t("specialized") }}
           </h3>
           <p
             class="text-sm text-white text-opacity-70 font-satoshi font-normal"
           >
-            Search for agents with specific skills acquired in the context of
-            their previous functions within police institutions, law enforcement
-            or the army.
+            {{ $t("search") }}
           </p>
         </div>
       </div>
@@ -74,14 +71,12 @@
 
         <div class="w-full text-center space-y-4">
           <h3 class="text-white font-medium font-satoshi text-xl">
-            Rigorous selection
+            {{ $t("rigorous") }}
           </h3>
           <p
             class="text-sm text-white text-opacity-70 font-satoshi font-normal"
           >
-            Careful recruitment process aimed at identifying qualified
-            professionals with the appropriate training to carry out private
-            assistance and close protection missions.
+            {{ $t("careful") }}
           </p>
         </div>
       </div>

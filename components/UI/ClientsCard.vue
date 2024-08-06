@@ -10,11 +10,10 @@
     <div class="w-full h-full py-[32px] bg-black rounded-[20px] space-y-10">
       <div class="w-full space-y-2 px-[24px] relative z-10">
         <h3 class="text-white font-satoshi font-bold text-2xl">
-          Varied clients
+          {{ $t("varied-clients") }}
         </h3>
         <p class="text-base font-satoshi text-white text-opacity-70">
-          From varied backgrounds such as politics, sport, the arts, as well as
-          directors and executives of large companies.
+          {{ $t("backgrounds") }}
         </p>
       </div>
       <div class="w-full relative space-y-8 effect">

@@ -14,21 +14,21 @@
     >
       <span
         class="font-satoshi font-black text-sm text-white text-opacity-60 uppercase"
-        >who do we hire</span
+        >{{ $t("who-do-we-hire") }}</span
       >
 
       <h3 class="text-white font-satoshi font-bold text-4xl">
-        Lima Protection is for the elite
+        {{ $t("protection") }}
       </h3>
       <p class="font-satoshi font-normal text-base text-white text-opacity-60">
-        We prospect qualified candidates to be part of our elite protection team
+        {{ $t("prospect") }}
       </p>
 
       <button class="element rounded-full p-px group duration-300">
         <div
           class="rounded-full py-[12px] px-[20px] text-white font-satoshi font-medium bg-black duration-300 bg-gradient-to-br group-hover:from-[#ffffff80] group-hover:to-[#00000001] from-[#ffffff30] from-[9.11%] to-[#00000001] to-[76.61%]"
         >
-          Apply for program
+          {{ $t("apply-for-program") }}
         </div>
       </button>
     </div>
@@ -43,9 +43,9 @@
           alt=""
         />
         <div class="absolute bottom-8 left-8">
-          <span class="text-white font-satoshi font-bold text-[28px]"
-            >Former Policemen</span
-          >
+          <span class="text-white font-satoshi font-bold text-[28px]">{{
+            $t("former-policemen")
+          }}</span>
         </div>
       </div>
       <div class="w-full h-[340px] rounded-[12px] relative overflow-hidden">
@@ -55,9 +55,9 @@
           alt=""
         />
         <div class="absolute bottom-8 left-8">
-          <span class="text-white font-satoshi font-bold text-[28px]"
-            >Military Personnel</span
-          >
+          <span class="text-white font-satoshi font-bold text-[28px]">{{
+            $t("military-personnel")
+          }}</span>
         </div>
       </div>
       <div class="w-full h-[340px] rounded-[12px] relative overflow-hidden">
@@ -67,9 +67,9 @@
           alt=""
         />
         <div class="absolute bottom-8 left-8">
-          <span class="text-white font-satoshi font-bold text-[28px]"
-            >Law Enforcement</span
-          >
+          <span class="text-white font-satoshi font-bold text-[28px]">{{
+            $t("law-enforcement")
+          }}</span>
         </div>
       </div>
     </div>

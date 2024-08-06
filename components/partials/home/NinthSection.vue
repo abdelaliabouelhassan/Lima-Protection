@@ -5,11 +5,11 @@
         <div class="flex flex-col items-center gap-6 px-4 text-center pt-4">
           <span
             class="font-satoshi font-black text-sm text-white text-opacity-60 uppercase"
-            >Let's get started</span
+            >{{ $t("lets") }}</span
           >
 
           <h3 class="text-white font-satoshi font-bold text-4xl">
-            We're ready to fulfill your security needs
+            {{ $t("ready") }}
           </h3>
 
           <a

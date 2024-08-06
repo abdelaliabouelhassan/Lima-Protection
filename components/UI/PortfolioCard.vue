@@ -10,11 +10,10 @@
     <div class="w-full py-[32px] bg-black rounded-[20px] space-y-10">
       <div class="w-full space-y-2 px-[24px] relative z-10">
         <h3 class="text-white font-satoshi font-bold text-2xl">
-          Large portfolio
+          {{ $t("portfolio") }}
         </h3>
         <p class="text-base font-satoshi text-white text-opacity-70">
-          Established reputation with a diverse client portfolio demonstrating
-          our ability to meet the varied requirements of our clients.
+          {{ $t("established") }}
         </p>
       </div>
       <div class="w-full relative space-y-4">

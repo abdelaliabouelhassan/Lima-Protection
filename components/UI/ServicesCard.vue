@@ -10,12 +10,10 @@
     <div class="w-full py-[32px] bg-black rounded-[20px] space-y-10">
       <div class="w-full space-y-2 px-[24px] relative z-10">
         <h3 class="text-white font-satoshi font-bold text-2xl">
-          Tailored services
+          {{ $t("tailored-services") }}
         </h3>
         <p class="text-base font-satoshi text-white text-opacity-70">
-          Strong expertise in providing personalized security services, tailored
-          to the specific needs of each client, with a focus on protecting those
-          exposed to potential risks.
+          {{ $t("expertise") }}
         </p>
       </div>
       <div class="w-full relative space-y-4 effect">

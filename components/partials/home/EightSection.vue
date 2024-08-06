@@ -23,13 +23,12 @@
           </div>
 
           <h3 class="text-white font-satoshi font-bold text-4xl">
-            Listen to our customers
+            {{ $t("Listen") }}
           </h3>
           <p
             class="font-satoshi font-normal text-base text-white text-opacity-60"
           >
-            We prospect qualified candidates to be part of our elite protection
-            team
+            {{ $t("Hear") }}
           </p>
         </div>
 
