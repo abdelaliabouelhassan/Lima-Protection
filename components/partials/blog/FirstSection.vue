@@ -1,13 +1,5 @@
 <template>
   <section class="w-full h-full pb-20">
-    <div class="absolute top-0 left-0 w-full h-[510px]">
-      <img
-        src="/images/blog/mas.png"
-        class="w-full h-full object-cover"
-        alt=""
-      />
-    </div>
-
     <div
       class="w-full flex flex-col items-center pt-48 max-w-[1120px] mx-auto px-4 xl:px-0 space-y-14"
     >
