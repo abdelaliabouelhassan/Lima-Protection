@@ -3,55 +3,112 @@
     <div
       class="w-full max-w-[1313px] mx-auto flex items-center justify-between px-4 pb-4 pt-8 z-50 relative"
     >
-      <div>
-        <img src="/images/logo.svg" class="w-full h-full object-cover" alt="" />
-      </div>
+      <router-link to="/">
+        <img
+          src="/images/logo.svg"
+          class="w-full h-full object-cover"
+          alt=""
+          v-if="props.theme === 'dark'"
+        />
+        <img
+          src="/images/logo-dark.svg"
+          class="w-full h-full object-cover"
+          alt=""
+          v-else
+        />
+      </router-link>
 
       <div class="element rounded-full p-px hidden lg:block">
         <div
-          class="bg-black rounded-full py-[12px] px-[32px] flex items-center justify-between gap-9"
+          :class="{
+            'bg-[#00000003] border text-[#0000004D] border-[#0000000D]':
+              props.theme === 'light',
+            'bg-black text-white text-opacity-50': props.theme === 'dark',
+          }"
+          class="rounded-full py-[12px] px-[32px] flex items-center justify-between gap-9"
         >
-          <a
-            href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
+          <router-link
+            to="/about-us"
+            :class="{
+              ' text-black': pageName === 'about-us' && props.theme === 'light',
+              '  text-[#0000004D] ':
+                pageName != 'about-us' && props.theme === 'light',
+              'bg-black text-white text-opacity-50 ': props.theme === 'dark',
+            }"
+            class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
             About us
-          </a>
-          <a
-            href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
+          </router-link>
+          <router-link
+            to="blog"
+            :class="{
+              ' text-black': pageName === 'blog' && props.theme === 'light',
+              '  text-[#0000004D] ':
+                pageName != 'blog' && props.theme === 'light',
+              'bg-black text-white text-opacity-50 ': props.theme === 'dark',
+            }"
+            class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
             Blog
-          </a>
-          <a
-            href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
+          </router-link>
+          <router-link
+            to="customers"
+            :class="{
+              ' text-black':
+                pageName === 'customers' && props.theme === 'light',
+              '  text-[#0000004D] ':
+                pageName != 'customers' && props.theme === 'light',
+              'bg-black text-white text-opacity-50 ': props.theme === 'dark',
+            }"
+            class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
             Customers
-          </a>
-          <a
-            href="#"
-            class="font-satoshi text-white text-opacity-50 text-base font-normal hover:text-opacity-100 duration-200"
+          </router-link>
+          <router-link
+            to="/resources"
+            :class="{
+              ' text-black':
+                pageName === 'resources' && props.theme === 'light',
+              '  text-[#0000004D] ':
+                pageName != 'resources' && props.theme === 'light',
+              'bg-black text-white text-opacity-50 ': props.theme === 'dark',
+            }"
+            class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
             Resources
-          </a>
+          </router-link>
 
-          <div class="h-[26px] w-px bg-white bg-opacity-20"></div>
+          <div
+            :class="{
+              '  bg-black bg-opacity-5 ': props.theme === 'light',
+              'bg-white bg-opacity-20 ': props.theme === 'dark',
+            }"
+            class="h-[26px] w-px"
+          ></div>
 
-          <LanguageSwitch />
+          <LanguageSwitch :theme="props.theme" />
         </div>
       </div>
 
       <div class="items-center gap-4 hidden lg:flex">
         <a
           href="#"
-          class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200"
+          :class="{
+            '  text-black ': props.theme === 'light',
+            'text-white text-opacity-60 ': props.theme === 'dark',
+          }"
+          class="font-satoshi hover:text-opacity-100 duration-200"
           >Apply</a
         >
         <a
           href="https://ax6hl0zetxi.typeform.com/to/ehMKwuTo"
           target="_blank"
-          class="text-black hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
+          :class="{
+            '  bg-black text-white ': props.theme === 'light',
+            'bg-white  text-black hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)]':
+              props.theme === 'dark',
+          }"
+          class="hover:shadow-lg whitespace-nowrap font-satoshi font-medium py-[12px] px-[24px] rounded-full duration-200"
         >
           {{ $t("hire-us") }}
         </a>
@@ -60,7 +117,11 @@
       <button
         name="menu1"
         @click="showMenu = !showMenu"
-        class="h-fit lg:hidden text-white text-opacity-70"
+        :class="{
+          '  text-black ': props.theme === 'light',
+          'text-white text-opacity-70 ': props.theme === 'dark',
+        }"
+        class="h-fit lg:hidden"
       >
         <svg
           width="43"
@@ -138,30 +199,30 @@
         <div
           class="w-full h-full justify-center flex flex-col items-center space-y-8 px-4 pb-8 overflow-y-auto"
         >
-          <a
-            href="#"
+          <router-link
+            to="/about-us"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             About us
-          </a>
-          <a
-            href="#"
+          </router-link>
+          <router-link
+            to="/blog"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             Blog
-          </a>
-          <a
-            href="#"
+          </router-link>
+          <router-link
+            to="/customers"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             Customers
-          </a>
-          <a
-            href="#"
+          </router-link>
+          <router-link
+            to="/resources"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             Resources
-          </a>
+          </router-link>
           <LanguageSwitch />
 
           <div class="flex items-center flex-col gap-4">
@@ -186,8 +247,18 @@
 
 <script setup>
 import LanguageSwitch from "@/components/UI/LanguageSwitch.vue";
+
+const props = defineProps({
+  theme: {
+    type: String,
+    default: "dark",
+  },
+});
+
 const open = ref(false);
 const showMenu = ref(false);
+const route = useRoute();
+const pageName = computed(() => route.name);
 
 watch(showMenu, (newValue, oldValue) => {
   document.body.classList.toggle("overflow-hidden");

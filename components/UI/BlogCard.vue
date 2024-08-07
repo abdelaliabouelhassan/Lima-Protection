@@ -1,0 +1,49 @@
+<template>
+  <div class="w-full">
+    <div
+      class="w-full overflow-hidden bg-gray-200"
+      :class="{
+        ' h-[205px] sm:h-[281px] rounded-[12px] sm:rounded-2xl ':
+          props.size === 'lg',
+        'h-[205px] rounded-[12px]': props.size === 'sm',
+      }"
+    >
+      <img :src="image" class="w-full h-full object-cover" alt="" />
+    </div>
+    <div class="space-y-2 pt-4">
+      <span
+        class="font-satoshi text-black text-sm font-black text-opacity-30"
+        >{{ category }}</span
+      >
+      <h4
+        :class="{
+          ' text-2xl sm:text-[30px] sm:tracking-[-2%] sm:leading-[41.6px] ':
+            props.size === 'lg',
+          ' text-2xl': props.size === 'sm',
+        }"
+        class="text-black font-satoshi font-medium"
+      >
+        {{ title }}
+      </h4>
+      <p
+        :class="{
+          ' text-sm sm:text-base ': props.size === 'lg',
+          ' text-sm': props.size === 'sm',
+        }"
+        class="font-normal text-black text-opacity-70"
+      >
+        {{ description }}
+      </p>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps([
+  "title",
+  "category",
+  "description",
+  "image",
+  "size", //lg or sm
+]);
+</script>

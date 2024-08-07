@@ -1,5 +1,23 @@
 <template>
-  <footer class="w-full py-20 space-y-10">
+  <footer class="w-full py-20 space-y-10 bg-black">
+    <div class="relative z-20">
+      <div
+        class="w-full max-w-[1180px] mx-auto text-center px-4 pb-4 space-y-8"
+      >
+        <p class="text-white text-opacity-70 font-satoshi font-medium">
+          Organizations we worked with to enhance our services
+        </p>
+        <div class="w-full flex flex-wrap gap-3 justify-center">
+          <a href="#" v-for="n in 7" :key="n">
+            <div class="px-[20px] py-[14px] bg-[#101010] rounded-2xl group">
+              <div
+                class="bg-white bg-opacity-30 w-[113px] h-[16px] group-hover:bg-opacity-100 duration-200"
+              ></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
     <div
       class="flex items-start md:items-center lg:items-start lg:flex-row flex-col justify-center w-full lg:justify-between max-w-[1280px] px-4 xl:px-0 mx-auto"
     >
