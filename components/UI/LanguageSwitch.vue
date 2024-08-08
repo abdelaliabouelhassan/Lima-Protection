@@ -1,8 +1,19 @@
 <template>
   <div class="relative">
     <div class="flex items-center gap-2 cursor-pointer" @click="open = !open">
-      <div>
-        <img src="/images/uk.png" class="w-full h-full object-cover" alt="" />
+      <div class="max-w-[20px] max-h-[20px]">
+        <img
+          src="/images/uk.png"
+          class="w-full h-full object-cover"
+          v-if="locale === 'en'"
+          alt=""
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg"
+          class="w-full h-full object-cover"
+          v-else
+          alt=""
+        />
       </div>
       <span
         class="font-satoshi uppercase"
