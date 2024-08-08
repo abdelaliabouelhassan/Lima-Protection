@@ -40,7 +40,7 @@
             About us
           </router-link>
           <router-link
-            to="blog"
+            to="/blog"
             :class="{
               ' text-black': pageName === 'blog' && props.theme === 'light',
               '  text-[#0000004D] ':
@@ -52,7 +52,7 @@
             Blog
           </router-link>
           <router-link
-            to="customers"
+            to="/customers"
             :class="{
               ' text-black':
                 pageName === 'customers' && props.theme === 'light',

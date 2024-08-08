@@ -8,7 +8,11 @@
         'h-[205px] rounded-[12px]': props.size === 'sm',
       }"
     >
-      <img :src="image" class="w-full h-full object-cover" alt="" />
+      <img
+        :src="image"
+        class="w-full h-full object-cover bg-[#F1F1F1] mix-blend-luminosity"
+        alt=""
+      />
     </div>
     <div class="space-y-2 pt-4">
       <span

@@ -1,7 +1,7 @@
 <template>
   <section class="w-full h-full pb-20">
     <div
-      class="w-full flex flex-col items-center pt-48 max-w-[1120px] mx-auto px-4 xl:px-0 space-y-14"
+      class="w-full flex flex-col items-center max-w-[1120px] mx-auto px-4 xl:px-0 space-y-14"
     >
       <div class="text-center max-w-[612px] mx-auto space-y-7">
         <h1 class="text-black font-bold font-satoshi text-5xl">Lima Blog</h1>

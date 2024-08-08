@@ -30,6 +30,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Italic.otf") format("opentype");
+  font-weight: 400; /* Assuming it's a bold font */
+  font-style: italic;
+}
+
 .element {
   background: radial-gradient(
     223.96% 223.96% at 50% -76.04%,

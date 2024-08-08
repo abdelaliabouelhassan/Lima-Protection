@@ -8,7 +8,7 @@
         alt=""
       />
     </div>
-    <div class="relative z-30">
+    <div class="relative z-30 pt-32 sm:pt-48">
       <slot />
     </div>
     <Footer />
