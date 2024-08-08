@@ -12,7 +12,7 @@
     </div>
     <div class="space-y-2 pt-4">
       <span
-        class="font-satoshi text-black text-sm font-black text-opacity-30"
+        class="font-satoshi uppercase text-black text-sm font-black text-opacity-30"
         >{{ category }}</span
       >
       <h4
