@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full cursor-pointer">
+  <router-link to="/blog/1" class="w-full cursor-pointer">
     <div
       class="w-full overflow-hidden bg-gray-200"
       :class="{
@@ -39,11 +39,12 @@
         {{ description }}
       </p>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script setup>
 const props = defineProps([
+  "id",
   "title",
   "category",
   "description",
