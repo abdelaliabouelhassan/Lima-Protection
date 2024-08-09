@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full py-20 space-y-10 bg-black">
-    <div class="relative z-20">
+    <!-- <div class="relative z-20">
       <div
         class="w-full max-w-[1180px] mx-auto text-center px-4 pb-4 space-y-8"
       >
@@ -17,7 +17,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div
       class="flex items-start md:items-center lg:items-start lg:flex-row flex-col justify-center w-full lg:justify-between max-w-[1280px] px-4 xl:px-0 mx-auto"
     >

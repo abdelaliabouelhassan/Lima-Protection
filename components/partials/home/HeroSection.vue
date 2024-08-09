@@ -1,5 +1,5 @@
 <template>
-  <section class="sm:-space-y-14 pb-24">
+  <section class="sm:-space-y-14">
     <div class="w-full relative sm:-space-y-20">
       <div class="sm:block hidden">
         <img src="/images/hero-bg.png" class="w-full sm:h-[1025px]" alt="" />
@@ -76,7 +76,7 @@
       </div>
     </div>
 
-    <div class="w-full flex flex-col items-center gap-8 pt-14 sm:pt-0">
+    <!-- <div class="w-full flex flex-col items-center gap-8 pt-14 sm:pt-0">
       <span class="text-white text-opacity-70 font-medium font-satoshi">{{
         $t("writing")
       }}</span>
@@ -92,6 +92,6 @@
           </div>
         </a>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>

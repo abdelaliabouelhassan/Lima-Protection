@@ -35,9 +35,8 @@
           ' text-sm': props.size === 'sm',
         }"
         class="font-normal text-black text-opacity-70"
-      >
-        {{ description }}
-      </p>
+        v-html="description"
+      ></p>
     </div>
   </router-link>
 </template>

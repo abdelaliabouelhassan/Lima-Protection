@@ -62,7 +62,7 @@
 
 <script setup>
 import BlogCard from "@/components/UI/BlogCard.vue";
-
+import axios from "axios";
 const blogs = ref([
   {
     title: "The Importance of Hiring Professional Bodyguards",
@@ -128,4 +128,30 @@ const blogs = ref([
     image: "/images/blog/blog-4.png",
   },
 ]);
+
+// const loadBlogs = () => {
+//   axios
+//     .get("https://limaprotection.com/wp-json/wp/v2/posts")
+//     .then(function (response) {
+//       // handle success
+
+//       response.data.forEach((record) => {
+//         console.log(record);
+//         blogs.value.push({
+//           title: record.title.rendered,
+//           category: "indeed",
+//           description: record.yoast_head,
+//           image: "",
+//         });
+//       });
+//     })
+//     .catch(function (error) {
+//       // handle error
+//       console.log(error);
+//     });
+// };
+
+onMounted(() => {
+  loadBlogs();
+});
 </script>
