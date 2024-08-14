@@ -33,9 +33,7 @@
         </div>
 
         <p class="text-white font-satoshi font-medium">
-          Our security company established in the Paris region, Lima Protection,
-          provides private aid and close security missions both in France and
-          abroad.
+          {{ $t("company") }}
         </p>
 
         <div class="flex items-center -space-x-3 md:ml-0 lg:-ml-4 -ml-4">
@@ -60,35 +58,37 @@
         <div class="flex flex-col items-start gap-4">
           <h4 class="text-lg font-satoshi text-white font-bold">MENU</h4>
           <a href="#" class="text-white font-satoshi font-medium text-sm">
-            About us
+            {{ $t("about_us") }}
           </a>
           <a href="#" class="text-white font-satoshi font-medium text-sm">
             Services
           </a>
-          <a href="#" class="text-white font-satoshi font-medium text-sm">
+          <!-- <a href="#" class="text-white font-satoshi font-medium text-sm">
             Blog
+          </a> -->
+          <a href="#" class="text-white font-satoshi font-medium text-sm">
+            {{ $t("customers") }}
           </a>
           <a href="#" class="text-white font-satoshi font-medium text-sm">
-            Customers
-          </a>
-          <a href="#" class="text-white font-satoshi font-medium text-sm">
-            Contact us
+            {{ $t("contactus") }}
           </a>
         </div>
         <div class="flex flex-col items-start gap-4">
           <h4 class="text-lg font-satoshi text-white font-bold">SERVICES</h4>
           <a href="#" class="text-white font-satoshi font-medium text-sm">
-            Personalized Risk Assessment
+            {{ $t("personalized_risk_assessment") }}
           </a>
           <a href="#" class="text-white font-satoshi font-medium text-sm">
-            Comprehensive Security Solutions
+            {{ $t("comprehensive_security_solutions") }}
           </a>
           <a href="#" class="text-white font-satoshi font-medium text-sm">
-            Proactive Monitoring
+            {{ $t("proactive_monitoring") }}
           </a>
         </div>
         <div class="flex flex-col items-start gap-4">
-          <h4 class="text-lg font-satoshi text-white font-bold">CONTACT US</h4>
+          <h4 class="text-lg font-satoshi text-white font-bold uppercase">
+            {{ $t("contactus") }}
+          </h4>
           <div class="-space-y-4 -mt-4">
             <div class="flex items-center -space-x-3 -space-y-4 gap-2 -ml-5">
               <div>
@@ -124,7 +124,7 @@
           <button
             class="text-black -mt-2 hover:shadow-[0px_0px_25px_rgba(255,255,255,0.5)] font-satoshi font-medium bg-white py-[12px] px-[24px] rounded-full duration-200"
           >
-            Contact us
+            {{ $t("contactus") }}
           </button>
         </div>
       </div>
@@ -154,16 +154,16 @@
           class="text-white font-medium font-satoshi text-sm underline"
           >Cookies</a
         >
-        <a
-          href="https://limaprotection.com/politique-confidentialite/"
+        <router-link
+          to="/privacy-policy"
           target="_blank"
           class="text-white font-medium font-satoshi text-sm underline"
-          >Privacy</a
+          >Privacy</router-link
         >
-        <a
-          href="#"
+        <router-link
+          to="/terms"
           class="text-white font-medium font-satoshi text-sm underline"
-          >Terms & Services</a
+          >Terms & Services</router-link
         >
         <a
           href="#"

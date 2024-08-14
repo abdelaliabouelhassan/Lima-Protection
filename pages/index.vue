@@ -22,4 +22,32 @@ import SixthSection from "@/components/partials/home/SixthSection.vue";
 import SeventhSection from "@/components/partials/home/SeventhSection.vue";
 import EightSection from "@/components/partials/home/EightSection.vue";
 import NinthSection from "@/components/partials/home/NinthSection.vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+
+watchEffect(() => {
+  useHead({
+    link: [{ rel: "icon", type: "image/x-icon", href: "/images/favicon.png" }],
+    title: t("meta-title"),
+    meta: [
+      { name: "description", content: t("meta-description") },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:title",
+        content: t("meta-title"),
+      },
+      {
+        property: "og:description",
+        content: t("meta-description"),
+      },
+      {
+        property: "og:site_name",
+        content: "Lima Protection",
+      },
+    ],
+  });
+});
 </script>

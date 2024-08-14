@@ -28,7 +28,7 @@
           class="rounded-full py-[12px] px-[32px] flex items-center justify-between gap-9"
         >
           <router-link
-            to="/about-us"
+            to="#aboutus"
             :class="{
               ' text-black': pageName === 'about-us' && props.theme === 'light',
               '  text-[#0000004D] ':
@@ -37,9 +37,9 @@
             }"
             class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
-            About us
+            {{ $t("about_us") }}
           </router-link>
-          <router-link
+          <!-- <router-link
             to="/blog"
             :class="{
               ' text-black': pageName === 'blog' && props.theme === 'light',
@@ -49,10 +49,10 @@
             }"
             class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
-            Blog
-          </router-link>
+            {{ $t("blog") }}
+          </router-link> -->
           <router-link
-            to="/customers"
+            to="#customers"
             :class="{
               ' text-black':
                 pageName === 'customers' && props.theme === 'light',
@@ -62,10 +62,10 @@
             }"
             class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
-            Customers
+            {{ $t("customers") }}
           </router-link>
           <router-link
-            to="/resources"
+            to="#resources"
             :class="{
               ' text-black':
                 pageName === 'resources' && props.theme === 'light',
@@ -75,7 +75,7 @@
             }"
             class="font-satoshi text-base font-normal hover:text-opacity-100 duration-200"
           >
-            Resources
+            {{ $t("resources") }}
           </router-link>
 
           <div
@@ -97,7 +97,7 @@
             '  text-black ': props.theme === 'light',
             'text-white text-opacity-60 ': props.theme === 'dark',
           }"
-          class="font-satoshi hover:text-opacity-100 duration-200"
+          class="font-satoshi hover:text-opacity-100 duration-200 hidden"
           >Apply</a
         >
         <a
@@ -200,35 +200,38 @@
           class="w-full h-full justify-center flex flex-col items-center space-y-8 px-4 pb-8 overflow-y-auto"
         >
           <router-link
-            to="/about-us"
+            @click="showMenu = false"
+            to="#aboutus"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
-            About us
+            {{ $t("about_us") }}
           </router-link>
           <router-link
             to="/blog"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
-            Blog
+            {{ $t("blog") }}
           </router-link>
           <router-link
-            to="/customers"
+            @click="showMenu = false"
+            to="#customers"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
-            Customers
+            {{ $t("customers") }}
           </router-link>
           <router-link
-            to="/resources"
+            @click="showMenu = false"
+            to="#resources"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
-            Resources
+            {{ $t("resources") }}
           </router-link>
           <LanguageSwitch />
 
           <div class="flex items-center flex-col gap-4">
             <a
               href="#"
-              class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200"
+              class="text-white text-opacity-60 font-satoshi hover:text-opacity-100 duration-200 hidden"
               >Apply</a
             >
             <a
