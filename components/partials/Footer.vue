@@ -145,30 +145,29 @@
       class="max-w-[1280px] mx-auto flex items-center md:flex-row flex-col gap-4 md:justify-between px-4 xl:px-0"
     >
       <p class="text-white font-medium font-satoshi text-sm">
-        © 2024 Lima Protection. All rights reserved.
+        © {{ new Date().getFullYear() }} {{ $t("copyright") }}
       </p>
 
       <div class="flex items-center gap-4">
         <a
           href="#"
           class="text-white font-medium font-satoshi text-sm underline"
-          >Cookies</a
+          >{{ $t("cookies") }}</a
         >
         <router-link
           to="/privacy-policy"
-          target="_blank"
           class="text-white font-medium font-satoshi text-sm underline"
-          >Privacy</router-link
+          >{{ $t("privacy") }}</router-link
         >
         <router-link
           to="/terms"
           class="text-white font-medium font-satoshi text-sm underline"
-          >Terms & Services</router-link
+          >{{ $t("terms") }}</router-link
         >
         <a
           href="#"
           class="text-white font-medium font-satoshi text-sm underline"
-          >Sitemap</a
+          >{{ $t("sitemap") }}</a
         >
       </div>
     </div>

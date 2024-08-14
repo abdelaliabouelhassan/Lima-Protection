@@ -60,3 +60,7 @@
   background-clip: text; /* Fallback for other browsers */
   color: transparent; /* Fallback for other browsers */
 }
+
+html {
+  scroll-behavior: smooth;
+}

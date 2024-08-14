@@ -28,7 +28,7 @@
           class="rounded-full py-[12px] px-[32px] flex items-center justify-between gap-9"
         >
           <router-link
-            to="#aboutus"
+            to="/#aboutus"
             :class="{
               ' text-black': pageName === 'about-us' && props.theme === 'light',
               '  text-[#0000004D] ':
@@ -52,7 +52,7 @@
             {{ $t("blog") }}
           </router-link> -->
           <router-link
-            to="#customers"
+            to="/#customers"
             :class="{
               ' text-black':
                 pageName === 'customers' && props.theme === 'light',
@@ -65,7 +65,7 @@
             {{ $t("customers") }}
           </router-link>
           <router-link
-            to="#resources"
+            to="/#resources"
             :class="{
               ' text-black':
                 pageName === 'resources' && props.theme === 'light',
@@ -201,7 +201,7 @@
         >
           <router-link
             @click="showMenu = false"
-            to="#aboutus"
+            to="/#aboutus"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             {{ $t("about_us") }}
@@ -214,14 +214,14 @@
           </router-link>
           <router-link
             @click="showMenu = false"
-            to="#customers"
+            to="/#customers"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             {{ $t("customers") }}
           </router-link>
           <router-link
             @click="showMenu = false"
-            to="#resources"
+            to="/#resources"
             class="font-satoshi text-white text-2xl text-opacity-50 font-normal hover:text-opacity-100 duration-200"
           >
             {{ $t("resources") }}
